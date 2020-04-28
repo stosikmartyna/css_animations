@@ -1,0 +1,92 @@
+.svg-image {
+    width: 50vw;
+    display: block;
+    margin: 0 auto;
+}
+
+/* oczy */
+#path12190,
+#path12192 {
+    animation-name: moveEyes;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveEyes {
+    0% {
+        transform: translateY(0px);
+    }
+    
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+/* wąsy */
+#path12206,
+#path12200,
+#path12208,
+#path12202 {
+    animation-name: moveMoustache;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes moveMoustache {
+    0% {
+        transform: translateY(0px);
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        transform: translateY(5px);
+        transform: rotate(1deg);
+
+    }
+}
+
+/* język */
+#path12186 {
+    animation-name: moveMouth;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveMouth {
+    0% {
+        transform: scale(1, 1)
+    }
+    50% {
+        transform: scale(1, 1.022)
+    }
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+#path12196,
+#path12194 {
+    animation-name: moveChick;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+       
+}
+
+@keyframes moveChick {
+    0% {
+        fill: #e1ba9e ;
+    }
+    
+    50% {
+        fill: #e99999;
+    }
+
+    100% {
+        fill: #e1ba9e ;
+    }
+}
