@@ -1,0 +1,78 @@
+body {
+    align-items: center;
+    background-color: rgb(231, 205, 248);
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.doughnut {
+    animation-name: spinDoughnut;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    border: 90px solid rgb(214, 165, 100);
+    border-radius: 50%;
+    height: 100px;
+    position: relative;
+    width: 100px;
+}
+
+/* lukier */
+.doughnut::before {
+    border: 70px solid pink;
+    border-radius: 50%;
+    content: '';
+    height: 100px;
+    left:-72px;
+    position: absolute;
+    top:-72px;
+    transform: scale(1.1);
+    width: 100px;
+}
+
+/* posypka */
+.doughnut::after {
+    background: white;
+    border-radius: 3px;
+    box-shadow: 
+        0px 30px 0 lightgreen,
+        60px 20px 0 yellow,
+        80px 10px 0 lightblue,
+        -30px 80px 0 lightcoral,
+        -10px 160px 0 lightgreen,
+        30px 170px  0 yellow,
+        50px 200px 0 lightseagreen,
+        130px 100px 0 lightpink,
+        150px 120px 0 lightblue,
+        140px 170px 0 lightsalmon,
+        -20px 40px 0 lightseagreen,
+        100px 180px 0 lightcoral,
+        120px 20px 0 lightcoral,
+        130px 60px 0 lightgreen,
+        160px 90px 0 lightseagreen,
+        -60px 130px 0 lightblue,
+        -30px 130px 0 lightsalmon;
+
+    content: '';
+    height: 10px;
+    left: 50px;
+    position: absolute;
+    top: -70px;
+    transform: rotate(30deg);
+    width: 2px;
+}
+
+@keyframes spinDoughnut {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    50% {
+        transform: rotate(360deg);
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
