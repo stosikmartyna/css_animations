@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.animation {
+    height: 100vh;
+    margin-top: 1rem;
+    width: 100vw;
+}
