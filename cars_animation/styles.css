@@ -8,3 +8,38 @@ body {
     margin-top: 1rem;
     width: 100vw;
 }
+
+#pinkCar,
+#pinkCar_leftWheel,
+#pinkCar_rightWheel,
+#darkCar,
+#darkCar_leftWheel,
+#darkCar_rightWheel  {
+    animation: moveCar 1.5s infinite linear;
+}
+
+@keyframes moveCar {
+    0% {
+        transform: translateY(0px);
+    }
+    
+    50% {
+        transform: translateY(4px);
+    }
+}
+
+#leftCloud,
+#centerCloud,
+#rightCloud {
+    animation: moveClouds 20s linear infinite;
+}
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(900px);
+    }
+    
+    100% {
+        transform: translateX(-620px);
+    }
+}
